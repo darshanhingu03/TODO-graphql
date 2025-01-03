@@ -1,0 +1,22 @@
+### normal query
+
+query runQuery {
+  getTodos {
+    id
+    title
+  }
+}
+
+### getById
+
+query runQuery($getUserId:ID!) {
+  getUserById (id:$getUserId) {
+    name
+    username
+  }
+}
+this is varible getUserId
+
+{
+  "getUserId": "1"
+}
